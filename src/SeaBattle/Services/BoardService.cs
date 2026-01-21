@@ -14,9 +14,9 @@ namespace SeaBattle.Services
         private Action<int, int> onEnemyGridClicked;
 
         /// <summary>
-        /// Initializes a new instance of the GameBoardManager class
+        /// Initializes a new instance of the BoardService class
         /// </summary>
-        public GameBoardManager(GameEngine gameEngine, Grid playerGrid, Grid enemyGrid,
+        public BoardService(GameEngine gameEngine, Grid playerGrid, Grid enemyGrid,
                               Action<int, int> onPlayerGridClicked, Action<int, int> onEnemyGridClicked)
         {
             this.gameEngine = gameEngine;
@@ -114,7 +114,7 @@ namespace SeaBattle.Services
 
                         button.BackgroundColor = cell switch
                         {
-                            CellState.Ship => Colors.Gray,
+                            CellState.Ship => Colors.BlueViolet,
                             CellState.Hit => Colors.Red,
                             CellState.Miss => Colors.White,
                             _ => Colors.LightBlue
