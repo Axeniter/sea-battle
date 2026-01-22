@@ -7,7 +7,7 @@ namespace SeaBattle.Server
     /// <summary>
     /// Service for discovering game servers in the local network
     /// </summary>
-    public class ServerDiscovery
+    public class UdpDiscovery
     {
         private const int DiscoveryPort = 8081;
         private bool isListening = false;

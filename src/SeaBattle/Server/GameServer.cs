@@ -7,7 +7,7 @@
     {
         public TcpMessageClient client;
         public TcpMessageServer server;
-        public ServerDiscovery discovery;
+        public UdpDiscovery discovery;
         public bool isServerMode = false;
         public string connectedClientIp = "";
         public bool isBroadcasting = false;
@@ -21,7 +21,7 @@
         {
             client = new TcpMessageClient();
             server = new TcpMessageServer();
-            discovery = new ServerDiscovery();
+            discovery = new UdpDiscovery();
             username = name;
         }
 
